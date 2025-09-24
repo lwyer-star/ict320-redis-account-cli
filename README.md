@@ -14,3 +14,16 @@ login, password (hashed), first name, security question, and security answer (ha
 2. Install deps:
    ```bash
    pip install -r requirements.txt
+## Run
+python -m venv .venv
+# Git Bash:
+source .venv/Scripts/activate
+# or CMD:
+.venv\Scripts\activate.bat
+pip install -r requirements.txt
+copy .env.example .env  # set REDIS_URL
+python app.py
+
+## CSV Import
+Header must be:
+username,password,firstname
